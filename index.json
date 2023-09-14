@@ -1,0 +1,94 @@
+{
+    "info": {
+        "name": "Django App API Tests",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Create a New Aip",
+            "event": [
+                {
+                    "script": {
+                        "type": "text/javascript",
+                        "exec": "// Define request payload\nvar payload = {\n  \"name\": \"John Doe\",\n};\n\n// Send POST request to create a new Aip\npm.sendRequest({\n  url: \" https://ola2-fr84.onrender.com/api\",\n  method: \"POST\",\n  header: {\n    \"Content-Type\": \"application/json\",\n    // Add any other headers if required\n  },\n  body: JSON.stringify(payload)\n});\n"
+                    }
+                }
+            ],
+            "request": {
+                "url": " https://task-4dt1.onrender.com/api/",
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\"name\": \"John Doe\"}"
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Fetch Aip Details by Name",
+            "event": [
+                {
+                    "script": {
+                        "type": "text/javascript",
+                        "exec": "// Send GET request to fetch Aip details by name\npm.sendRequest({\n  url: \" https://task-4dt1.onrender.com/api/1\",\n  method: \"GET\",\n  header: {\n    // Add any headers if required\n  }\n});\n"
+                    }
+                }
+            ],
+            "request": {
+                "url": " https://task-4dt1.onrender.com/api/1",
+                "method": "GET",
+                "header": []
+            },
+            "response": []
+        },
+        {
+            "name": "Update Aip Details",
+            "event": [
+                {
+                    "script": {
+                        "type": "text/javascript",
+                        "exec": "// Define request payload for updating Aip details\nvar payload = {\n  \"name\": \"John Dob\",\n };\n\n// Send PUT request to update Aip details by name\npm.sendRequest({\n  url: \" https://task-4dt1.onrender.com/api/1\",\n  method: \"PUT\",\n  header: {\n    \"Content-Type\": \"application/json\",\n    // Add any other headers if required\n  },\n  body: JSON.stringify(payload)\n});\n"
+                    }
+                }
+            ],
+            "request": {
+                "url": " https://task-4dt1.onrender.com/api/1",
+                "method": "PUT",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\"name\": \"John Dob\"}"
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Delete Aip by Name",
+            "event": [
+                {
+                    "script": {
+                        "type": "text/javascript",
+                        "exec": "// Send DELETE request to remove a Aip by name\npm.sendRequest({\n  url: \" https://task-4dt1.onrender.com/api/1\",\n  method: \"DELETE\",\n  header: {\n    // Add any headers if required\n  }\n});\n"
+                    }
+                }
+            ],
+            "request": {
+                "url": " https://task-4dt1.onrender.com/api/1",
+                "method": "DELETE",
+                "header": []
+            },
+            "response": []
+        }
+    ]
+}
