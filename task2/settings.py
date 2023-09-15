@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-^a&ninqg*k2tvi%o_!--a(idwt+x^$b=&_w%(u%7p_7=w$_obr
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['olatunde.pythonanywhere.com']
 
 
 # Application definition
@@ -80,7 +80,7 @@ WSGI_APPLICATION = 'task2.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'olatunde$task',
+        'NAME': 'olatunde$task-2',
         'USER':'olatunde',
         'PASSWORD': 'Teddybear8009^^',
         'HOST': 'olatunde.mysql.pythonanywhere-services.com',
